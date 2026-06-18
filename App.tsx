@@ -1,45 +1,39 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import { useState } from 'react';
 import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+  StatusBar,
+  useColorScheme,
+} from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import ImageSelectionScreen from './components/ImageSelectionScreen';
+import TextResultScreen from './components/TextResultScreen';
+
+type ExtractedResult = {
+  imageUri: string;
+  text: string;
+};
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
+  const [result, setResult] = useState<ExtractedResult | null>(null);
 
   return (
     <SafeAreaProvider>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
+      {result ? (
+        <TextResultScreen
+          imageUri={result.imageUri}
+          initialText={result.text}
+          onBack={() => setResult(null)}
+        />
+      ) : (
+        <ImageSelectionScreen
+          onTextExtracted={(imageUri: string, text: string) =>
+            setResult({ imageUri, text })
+          }
+        />
+      )}
     </SafeAreaProvider>
   );
 }
-
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
-  return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;

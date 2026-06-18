@@ -33,8 +33,10 @@
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>ImageTextReader needs camera access to take photos and read text from them.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>ImageTextReader needs photo library access to select images and read text from them.</string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

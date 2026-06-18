@@ -5,7 +5,11 @@ require Pod::Executable.execute_command('node', ['-p',
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-platform :ios, min_ios_version_supported
+# --- RN-MLKIT-OCR CONFIG ---
+$ReactNativeOcrSubspecs = ['latin']
+# --- END RN-MLKIT-OCR CONFIG ---
+
+platform :ios, '15.5'
 prepare_react_native_project!
 
 linkage = ENV['USE_FRAMEWORKS']
