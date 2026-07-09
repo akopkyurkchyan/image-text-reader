@@ -76,7 +76,7 @@ async function requestCameraPermission(): Promise<boolean> {
     PermissionsAndroid.PERMISSIONS.CAMERA,
     {
       title: 'Camera Permission',
-      message: 'ImageTextReader needs camera access to take photos.',
+      message: 'Image to Text needs camera access to take photos.',
       buttonNeutral: 'Ask Me Later',
       buttonNegative: 'Cancel',
       buttonPositive: 'OK',
@@ -268,7 +268,7 @@ export default function ImageSelectionScreen({
       ]}>
       <View style={styles.header}>
         <Text style={[styles.title, { color: colors.text }]}>
-          Image Text Reader
+          Image to Text
         </Text>
         <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
           Take a photo or choose one from your library to extract text.

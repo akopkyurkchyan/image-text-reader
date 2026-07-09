@@ -1,7 +1,7 @@
 import Reactotron from 'reactotron-react-native';
 
 const reactotron = Reactotron.configure({
-  name: 'ImageTextReader',
+  name: 'Image to Text',
 })
   .useReactNative({
     asyncStorage: false,

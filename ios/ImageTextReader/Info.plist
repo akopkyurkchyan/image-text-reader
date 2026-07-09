@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>ImageTextReader</string>
+	<string>Image to Text</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -34,9 +34,9 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>ImageTextReader needs camera access to take photos and read text from them.</string>
+	<string>Image to Text needs camera access to take photos and read text from them.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>ImageTextReader needs photo library access to select images and read text from them.</string>
+	<string>Image to Text needs photo library access to select images and read text from them.</string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
