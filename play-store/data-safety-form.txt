@@ -1,0 +1,49 @@
+=== GOOGLE PLAY — DATA SAFETY FORM (guidance for Image to Text) ===
+
+Does your app collect or share user data?
+→ No (for server-side collection). Processing is on-device only.
+
+Data types — typically declare as NOT collected for:
+• Personal info (name, email, etc.)
+• Financial info
+• Location
+• Contacts
+• User IDs
+• App activity (analytics) — unless you add analytics later
+
+If Play asks about Photos and videos:
+• Accessed: Yes (user selects/captures images)
+• Collected: No (not sent to your servers)
+• Shared: No
+• Processed ephemerally on device: Yes
+• Purpose: App functionality (OCR)
+• Optional: User chooses when to use camera/gallery
+
+If Play asks about Device or other IDs:
+→ No, unless a dependency collects them (this app has no analytics SDK)
+
+Encryption in transit:
+→ N/A for user content (not transmitted). Standard HTTPS if any framework traffic.
+
+Can users request data deletion?
+→ N/A — no account, no server storage. User can uninstall the app.
+
+=== PERMISSIONS DECLARATION (App content) ===
+
+CAMERA
+Why: Let users take photos to extract text.
+Required for core feature: Yes (for camera flow; gallery-only still works)
+
+READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE
+Why: Let users pick existing photos from gallery.
+Required: Yes for gallery flow
+
+=== CONTENT RATING (IARC) ===
+
+Likely rating: Everyone / PEGI 3 / similar
+No violence, gambling, user-generated public content, or social features.
+
+=== TARGET AUDIENCE ===
+
+If no ads and general productivity app: All ages or 13+ depending on your preference.
+Do not select "primarily child-directed" unless you target kids.

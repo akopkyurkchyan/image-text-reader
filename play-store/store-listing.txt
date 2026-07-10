@@ -1,0 +1,48 @@
+=== GOOGLE PLAY STORE LISTING (copy/paste) ===
+
+App name (30 chars max):
+Image to Text
+
+Short description (80 chars max):
+Extract text from photos instantly. Camera, gallery, and on-device OCR.
+
+Full description (4000 chars max):
+Image to Text turns photos into editable text in seconds.
+
+Take a picture with your camera or choose an image from your gallery, and the app extracts the text using fast on-device OCR. Edit the result, then copy it to your clipboard.
+
+Features:
+• Take a photo or pick from gallery
+• On-device text recognition — your images stay on your phone
+• Edit extracted text before copying
+• Simple, focused interface
+
+Perfect for digitizing notes, receipts, signs, documents, and screenshots.
+
+Image to Text does not require an account. Text recognition runs locally on your device using Google ML Kit.
+
+Category suggestion:
+Productivity
+
+Tags / keywords (if prompted):
+OCR, image to text, scan text, photo to text, copy text, document scanner
+
+Contact email:
+[YOUR_EMAIL@example.com]
+
+Privacy policy URL (after publishing docs/ to GitHub Pages):
+https://akopkyurkchyan.github.io/image-text-reader/privacy-policy.html
+
+High-res icon (512x512):
+Use: assets/app-icon.png (1024x1024 — Play will accept it)
+
+Feature graphic (1024 x 500):
+[CREATE — screenshot collage or branded banner]
+
+Phone screenshots (min 2, recommend 4–8):
+[CAPTURE from release build on a real Android phone]
+Suggested screens:
+1. Home — Take Photo / Choose from Gallery
+2. Camera or gallery picker in use
+3. Extracted text result screen
+4. Copy / edit text screen

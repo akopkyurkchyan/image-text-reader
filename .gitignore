@@ -41,6 +41,7 @@ local.properties
 
 # Android/iOS release signing
 #
+android/keystore.properties
 *.jks
 *.p8
 *.p12
