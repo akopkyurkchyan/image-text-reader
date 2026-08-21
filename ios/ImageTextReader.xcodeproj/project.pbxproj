@@ -13,6 +13,7 @@
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A1E2F3012E12345600B75B9A /* IsSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E2F3002E12345600B75B9A /* IsSimulator.m */; };
+		A1E2F3092E12345600B75B9A /* VisionOcr.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E2F3082E12345600B75B9A /* VisionOcr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ImageTextReader/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ImageTextReader/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1E2F3002E12345600B75B9A /* IsSimulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IsSimulator.m; path = ImageTextReader/IsSimulator.m; sourceTree = "<group>"; };
+		A1E2F3082E12345600B75B9A /* VisionOcr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VisionOcr.m; path = ImageTextReader/VisionOcr.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -47,6 +49,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				A1E2F3002E12345600B75B9A /* IsSimulator.m */,
+				A1E2F3082E12345600B75B9A /* VisionOcr.m */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
@@ -194,13 +197,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ImageTextReader/Pods-ImageTextReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ImageTextReader/Pods-ImageTextReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -237,13 +236,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ImageTextReader/Pods-ImageTextReader-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ImageTextReader/Pods-ImageTextReader-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,6 +254,7 @@
 			files = (
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 				A1E2F3012E12345600B75B9A /* IsSimulator.m in Sources */,
+				A1E2F3092E12345600B75B9A /* VisionOcr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@ export type PickedImage = Pick<
 
 const galleryOptions: ImageLibraryOptions = {
   mediaType: 'photo',
-  quality: 0.8,
+  quality: 1,
   selectionLimit: 1,
   presentationStyle: Platform.OS === 'ios' ? 'pageSheet' : 'fullScreen',
 };

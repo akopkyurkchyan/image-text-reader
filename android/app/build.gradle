@@ -127,6 +127,8 @@ dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
     implementation("androidx.activity:activity:1.9.+")
+    implementation("androidx.exifinterface:exifinterface:1.3.7")
+    implementation("cz.adaptech.tesseract4android:tesseract4android:4.9.0")
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")

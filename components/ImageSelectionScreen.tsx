@@ -36,7 +36,7 @@ type ImageSelectionScreenProps = {
 
 const cameraOptions: CameraOptions = {
   mediaType: 'photo',
-  quality: 0.8,
+  quality: 1,
   presentationStyle: 'fullScreen',
 };
 
